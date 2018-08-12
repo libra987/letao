@@ -1,0 +1,13 @@
+@import "./common.scss";
+
+body {
+    background-color: #222d32;
+}
+
+.container {
+    width: 400px;
+    margin: 150px auto;
+    h4 {
+        text-align: center;
+    }
+}

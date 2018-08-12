@@ -1,0 +1,137 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-left: 180px;
+  background-color: #222d32;
+  transition: all 1s;
+}
+.main.active {
+  padding-left: 0px;
+}
+.main .left {
+  position: absolute;
+  width: 180px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  transition: all 1s;
+}
+.main .left.active {
+  left: -180px;
+}
+.main .left .bar {
+  height: 45px;
+  width: 180px;
+  background-color: #367fa9;
+  color: #fff;
+  font-size: 20px;
+  line-height: 45px;
+  text-align: center;
+}
+.main .left .content img {
+  width: 100px;
+  margin-top: 20px;
+}
+.main .left .content .role {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  margin: 20px 0px 40px 0px;
+}
+.main .left .content .menu li, .main .left .content .submenu li {
+  line-height: 0;
+}
+.main .left .content .menu a, .main .left .content .submenu a {
+  display: flex;
+  height: 40px;
+  padding-left: 40px;
+  color: #fff;
+  align-items: center;
+  text-decoration: none;
+}
+.main .left .content .menu a span.glyphicon, .main .left .content .submenu a span.glyphicon {
+  margin-right: 5px;
+}
+.main .left .content .menu a.active, .main .left .content .submenu a.active {
+  background-color: #1d1f21;
+  border-left: 3px solid #105988;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid transparent;
+}
+.main .left .content .submenu a {
+  padding-left: 60px;
+}
+.main .right {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+}
+.main .right > .bar {
+  width: 100%;
+  height: 45px;
+  background-color: #3c8dbc;
+  padding: 10px;
+}
+.main .right > .bar a {
+  color: #fff;
+  font-size: 20px;
+}
+.main .right .content {
+  padding: 20px;
+}
+.main .right .content .charts .bar, .main .right .content .charts .pie {
+  height: 400px;
+}
+.main .right .content .datalist {
+  padding-right: 45px;
+}
+.main .right .content .datalist .addcategorybtn {
+  margin-bottom: 10px;
+}
+.main .right .content .datalist table td, .main .right .content .datalist table th {
+  text-align: center;
+  vertical-align: middle;
+}
+.main .right .content .datalist table td img {
+  display: inline-block;
+  width: 60px;
+}
+
+#logoutModal .modal-body p {
+  color: #a94442;
+}
+
+#addCategoryModal .form-group {
+  margin-bottom: 0px;
+}
+
+.addsubcategorybtn {
+  margin-bottom: 10px;
+}
+
+#addSubcategoryModal .filediv, #addgoodsModal .filediv {
+  position: relative;
+}
+#addSubcategoryModal .filediv .btn-default, #addgoodsModal .filediv .btn-default {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 30px;
+}
+#addSubcategoryModal .filediv .fileinput, #addgoodsModal .filediv .fileinput {
+  height: 30px;
+  opacity: 0;
+}
+
+/*# sourceMappingURL=index.css.map */
